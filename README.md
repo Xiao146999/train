@@ -66,12 +66,17 @@ Python 3.10+
 PySCIPOpt, Pydantic, PyYAML
 
 ### 4.2 安装与运行
-bash
-#### 建议先建虚拟环境
+
+**1. 创建并激活虚拟环境（强烈建议）**
+
+- **Windows (PowerShell / CMD)**:
+```bash
 python -m venv .venv
-#### Windows
 .venv\Scripts\activate
-#### macOS / Linux
+macOS / Linux:
+
+bash
+python3 -m venv .venv
 source .venv/bin/activate
 
 #### 安装依赖 (若只验证实时引擎骨架，装 pydantic 即可)
