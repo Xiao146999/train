@@ -58,26 +58,26 @@ railway-seat-optimization/
 
 ```
 
-##🚀 四、 快速开始
+## 🚀 四、 快速开始
 
-###4.1 环境依赖
+### 4.1 环境依赖
 Python 3.10+
 
 PySCIPOpt, Pydantic, PyYAML
 
-###4.2 安装与运行
+### 4.2 安装与运行
 bash
-# 建议先建虚拟环境
+#### 建议先建虚拟环境
 python -m venv .venv
-# Windows
+#### Windows
 .venv\Scripts\activate
-# macOS / Linux
+#### macOS / Linux
 source .venv/bin/activate
 
-### 安装依赖 (若只验证实时引擎骨架，装 pydantic 即可)
+#### 安装依赖 (若只验证实时引擎骨架，装 pydantic 即可)
 pip install -r requirements.txt
 
-### 运行系统
+#### 运行系统
 python main.py
 预期输出：
 
@@ -86,7 +86,7 @@ text
 出票状态: 成功
 (当前 allocate() 恒返回 True，_filter_hard_constraints() 原样返回全部座位——这是骨架的「绝不卡单」保底行为。)
 
-##🗺️ 五、 待填充清单 (Roadmap)
+## 🗺️ 五、 待填充清单 (Roadmap)
 □ src/core/engine_online.py：_filter_hard_constraints 硬约束过滤、连座贪心 + 库存扣减（P2-P3）
 □ src/models/scip_solver.py：0-1 决策变量、P0-P5 约束、目标函数
 □ src/core/engine_offline.py：由最优矩阵构建 PyG 异构图、触发 GNN 训练
@@ -94,5 +94,5 @@ text
 □ src/utils/alert_system.py：工单落库 / 前端红字弹窗推送
 □ tests/：硬约束、降级路径、库存一致性的单元测试
 
-##📜 六、 开源许可证
+## 📜 六、 开源许可证
 本项目采用 MIT License 开源协议。
