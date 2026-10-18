@@ -79,6 +79,8 @@ bash
 python3 -m venv .venv
 source .venv/bin/activate
 
+```
+
 #### 安装依赖 (若只验证实时引擎骨架，装 pydantic 即可)
 pip install -r requirements.txt
 
